@@ -55,7 +55,7 @@ app.post('/api/v1/pets', function(request, response) {
 
   pet.save(function(err, pet) {
     if ( err ) {
-      return response.send(400).json({ error: err });
+      return response.status(400).json({ error: err });
     }
     response.json({ pet: pet });
   });
