@@ -31,7 +31,7 @@ var petShelterSchema = new Schema({
       type: String,
       default: 'Point'
     },
-    type: {
+    coordinates: {
       type: Array,
       default: [-1, -1]
     }
